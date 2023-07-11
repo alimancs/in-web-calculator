@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+     <div id="switchbox">
+          <span id="switchpara">Dark Mode</span>
+          <div id="switchboxnest">
+               <div id="switchmain">
+                   <button onclick="switchbutton()" id="switchbutton"></button>
+               </div>
+          </div>
+     </div>
+    <p id="store1">0</p>
+    <p id="store2">0</p>
+    <p id="store3">0</p>
+    <div id="calculator-body">
+        <div id="screen">
+            <div id="output">
+                0
+            </div>
+        </div>
+        <div id="pad">
+            <button onclick="clearScreen()" id="button4">
+               AC
+            </button>
+            <button onclick="sqrtEvent()" id="button2">
+                 &Sqrt;
+            </button>
+            <button onclick="logEvent()" id="button3">
+                  log
+            </button>
+            <button onclick="divEvent()" id="button1">
+               &divide;
+            </button>
+            <button onclick="sinEvent()" id="buttonsci1">
+               sin
+            </button>
+            <button onclick="cosEvent()" id="buttonsci2">
+               cos
+            </button>
+            <button onclick="tanEvent()" id="buttonsci3">
+               tan
+            </button>
+            <button onclick="multiEvent()" id="button5">
+                 &times;
+            </button>
+            <button onclick="val(1)" id="button6">
+                 1
+            </button>
+            <button onclick="val(2)" id="button7">
+                 2
+            </button>
+            <button onclick="val(3)" id="button8">
+                 3
+            </button>
+            <button onclick="subEvent()" id="button9">
+                 -
+            </button>
+            <button onclick="val(4)" id="button10">
+                 4
+            </button>
+            <button onclick="val(5)" id="button11">
+                 5
+            </button>
+            <button onclick="val(6)" id="button12">
+                 6
+            </button>
+            <button onclick="addEvent()" id="button13">
+                 &plus;
+            </button>
+            <button onclick="val(7)" id="button14">
+                 7
+            </button>
+            <button onclick="val(8)" id="button15">
+                 8
+            </button>
+            <button onclick="val(9)" id="button16">
+                 9
+            </button>
+            <button onclick="calculate()" id="button17">
+                 &equals;
+            </button>
+            <button onclick="val('.')" id="button18">
+                .
+            </button>
+            <button onclick="val(0)" id="button19">
+                0
+            </button>
+        </div>
+    </div>
+
+    <div id="footer">
+       <p id="footerpara">Alimamcs &copy; 2023 all rights reserved</p>
+       <a class="donate" href=""> &nbsp;&nbsp;&nbsp;Buy the developer a coffee</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
